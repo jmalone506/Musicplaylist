@@ -1,21 +1,21 @@
 
-// var Sequelize = require("sequelize");
-// var sequelize = require("../config/connection.js");
+var Sequelize = require("sequelize");
+var sequelize = require("../config/connection.js");
 
-// var Playlist = sequelize.define("playlist", {
-//   routeName: Sequelize.STRING,
-//   genre: Sequelize.STRING,
-//   song: Sequelize.STRING,
-//   artist: Sequelize.STRING
+var Playlist = sequelize.define("playlist", {
+  routeName: Sequelize.STRING,
+  genre: Sequelize.STRING,
+  song: Sequelize.STRING,
+  artist: Sequelize.STRING
   
   
   
-// }, {
+}, {
 
-//   freezeTableName: true
-// });
+  freezeTableName: true
+});
 
 
-// Playlist.sync();
+Playlist.sync();
 
-// module.exports = Playlist
+module.exports = Playlist
